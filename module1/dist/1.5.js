@@ -1,6 +1,6 @@
+"use strict";
 // {
 //   // Reference Type --> Object
-
 //   const user: {
 //     readonly company: string; // type --> literal types
 //     firstName: string;
@@ -13,6 +13,5 @@
 //     lastName: "Abedin",
 //     isMarried: true,
 //   };
-
 //   user.company = "PH";
 // }

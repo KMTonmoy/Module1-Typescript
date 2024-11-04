@@ -1,29 +1,44 @@
 {
-  // *
+  //
+  // union types
 
-  type FontendDeveloper = "fakibazdeveloper" | "juniordeveloper";
-  type FullStackDeveloper = "FontendDeveloper" | "ExpertDeveloper";
+  // type FrontendDeveloper = 'fakibazDeveloper' | 'juniorDeveloper'
+  // type FullstackDeveloper = 'frontendDeveloper' | 'expertDeveloper'
 
-  type Developer = FontendDeveloper | FullStackDeveloper;
+  //  type Developer = FrontendDeveloper | FullstackDeveloper
 
-  type User = {
-    name: string;
-    email: string;
-    gender: "male" | "femail";
-    bloodGroup: "O+" | "A+" | "B-";
+  // const newDeveloper : FrontendDeveloper = 'juniorDeveloper'
+
+  // type User ={
+  //   name: string;
+  //   email?: string;
+  //   gender:"male"| "female";
+  //   bloodGroup:"O+"|"A+"|"AB+"
+  // }
+
+  // const user1: User ={
+  //   name:'persian',
+  //   gender:'male',
+  //   bloodGroup:'O+'
+  // }
+
+  type FrontendDeveloper = {
+    skills: string[];
+    designation1: "Frontend Developer";
   };
 
-  const user1: user = {
-    name: "Tonmoy",
-    gender: "male",
-    bloodGroup: "O+",
+  type BackendDeveloper = {
+    skills: string[];
+    designation2: "Backend Developer";
   };
 
-    
-    
+  type FullstackDeveloper = FrontendDeveloper & BackendDeveloper;
 
-    
-    
-    
-  // *
+  const fullstackDeveloper: FullstackDeveloper = {
+    skills: ["HTML", "CSS", "EXPRESS"],
+    designation1: "Frontend Developer",
+    designation2: "Backend Developer",
+  };
+
+  //
 }
